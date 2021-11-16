@@ -34,20 +34,41 @@
 #     content = my_file.read()    # read() returns the content of file
 #     #print("Reading file: ")
 #     print(content)
-
+import audioop
 
 f = open("sample.txt", "w")
 #a = ["Hamza","CSE",24]
 #multiplier = int(input("Please enter digit for print Table: "))
-f = open("sample.txt", "w")
-multiplier = 3
-table= []
-for i in range (1 , 11):
-     z = multiplier, "x", i, "=", multiplier * i
-     table.append(z)
+# f = open("demo.txt", "w")
+# multiplier = 3
+# table= []
+# for i in range (1 , 11):
+#      z = multiplier, "x", i, "=", multiplier * i
+#      table.append(z)
+#
+# f.write(str(table))
+# f.close()
+#
+# f = open("demo.txt", "r")
+# f.read()
 
-f.write(str(table))
+
+# for i in range(rows, 0, -1):
+#     for j in range(0, rows - i):
+#         print(end=" ")
+#     for j in range(1, i+1):
+#         print(" *",end="")
+#     print()
+
+
+f = open("demo.txt", "w")
+a=[]
+for i in range(65 , 123):
+    a.append(chr(i))
+
+f.write(str(a))
 f.close()
 
-f = open("sample.txt", "r")
+f = open("demo.txt", "r")
 f.read()
+
